@@ -1,0 +1,6 @@
+number;answer;clue;direction;Row;col
+1;BELL;It rings;across;0;0
+2;OAK;Old tree;across;1;0
+3;AS;Butt;across;2;0
+4;TYPE;A category or sort;across;3;0
+5;EASY;Takes no effort;down;0;1
