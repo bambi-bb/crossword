@@ -25,7 +25,11 @@ function CrossWordBoxCSV() {
     setIsIncorrect(false);
   };
 
-  const filePaths = ["/1.csv", "/2.csv", "/3.csv", "/4.csv"]; // Array of file paths
+  const filePaths = [
+    process.env.PUBLIC_URL + "/1.csv",
+    process.env.PUBLIC_URL + "/2.csv",
+    process.env.PUBLIC_URL + "/3.csv",
+  ]; // Array of file paths
 
   const fetchCrossword = (filePath: string) => {
     console.log("Fetching data from:", filePath); // Debugging: Log the selected file path
