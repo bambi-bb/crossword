@@ -1,3 +1,9 @@
 number;answer;clue;direction;Row;col
-1;E;EEEEE EEEEEEEEEEEE EEEEEEEEEEE EEEE EEEEEE EEEEEEEEE EEEEEEEE;down;0;0
-2;B;B;down;5;4
+1;APOR;Förmänskliga primater;across;0;0
+2;VÅRA;Inte era;across;1;0
+3;IVOR;Kvinnonamn med klassisk klang;across;2;0
+4;GE;Erbjuda;across;3;0
+5;AVIG;Inte vänligt inställd;down;0;0
+6;PÅVE;Kyrkligt överhuvud;down;0;1
+7;ORO;Magont;down;0;2
+8;RAR;Snäll;down;0;3
