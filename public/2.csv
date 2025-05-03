@@ -1,3 +1,10 @@
 number;answer;clue;direction;Row;col
-1;E;EEEEE EEEEEEEEEEEE EEEEEEEEEEE EEEE EEEEEE EEEEEEEEE EEEEEEEE;down;0;0
-2;B;B;down;5;4
+1;EGEN;Bara min, inte din;across;0;0
+2;VARA;En sak som säljs;across;1;0
+3;IT;Tekniskt och digitalt ämne;across;2;0
+4;GALT;Manlig lortpelle;across;3;0
+1;EVIG;Är stark kärlek;down;0;0
+5;GATA;Asfalterad adress;down;0;1
+6;ER;Inte min - men nästan din;down;0;2
+7;NATT;Dagens mörka tvillingsjäl;down;0;3
+

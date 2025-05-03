@@ -25,7 +25,13 @@ function CrossWordBoxCSV() {
     setIsIncorrect(false);
   };
 
-  const filePaths = ["/1.csv", "/2.csv", "/3.csv"]; // Array of file paths
+  const filePaths = [
+    "/crossword/1.csv",
+    "/crossword/2.csv",
+    "/crossword/3.csv",
+    "/crossword/4.csv",
+    "/crossword/5.csv",
+  ]; // Array of file paths
 
   const fetchCrossword = (filePath: string) => {
     console.log("Fetching data from:", filePath); // Debugging: Log the selected file path
@@ -135,13 +141,13 @@ function CrossWordBoxCSV() {
               onClick={fetchPreviousCrossword}
               className="crossword-button"
             >
-              Previous
+              Tidigare
             </button>
             <button onClick={fetchRandomCrossword} className="crossword-button">
               Random
             </button>
             <button onClick={fetchNextCrossword} className="crossword-button">
-              Next
+              Nästa
             </button>
           </div>
         </div>
@@ -163,8 +169,8 @@ function CrossWordBoxCSV() {
               key={currentFile} // Ensures full re-mount on file change
               ref={crosswordRef}
               data={crosswordData}
-              acrossLabel={"Across:"}
-              downLabel={"Down"}
+              acrossLabel={"Vågrätt:"}
+              downLabel={"Lodrätt:"}
               onCrosswordComplete={() => {
                 if (crosswordRef.current?.isCrosswordCorrect()) {
                   setIsCorrect(true); // Set correct state if the crossword is correct
