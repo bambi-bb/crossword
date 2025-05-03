@@ -36,14 +36,21 @@ body {
     margin-bottom: 0px;
 }
 
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Input box */
 .input-crossword {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 10px;
+    padding: 4px;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
     width: 40px;
     height: 30px;
     border-radius: 10px;
@@ -62,6 +69,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 /* Button styles */
@@ -92,23 +100,26 @@ body {
 }
 
 .status-message.correct {
-    grid-area: 2/2/3/3;
+    display: flex;
+    align-items: center;
     color: green;
-    margin-left: 20px;
-    margin-top: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .status-message.incorrect {
-    grid-area: 2/2/3/3;
-    margin-left: 20px;
-    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 0px;
     color: red;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 /* Responsive styles */

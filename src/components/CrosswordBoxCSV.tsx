@@ -119,22 +119,28 @@ function CrossWordBoxCSV() {
   return (
     <div className="crossword-wrapper">
       <div className="crossword-container">
+        {/* Status messages */}
         {/* Group the input box and buttons */}
         <div className="crossword-input-buttons-container">
           {/* Input box */}
-          <input
-            className="input-crossword"
-            type="text"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)} // Update input value
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                fetchGivenCrossword(); // Fetch crossword on Enter key press
-              }
-            }}
-            placeholder={`${filePaths.indexOf(currentFile) + 1}`}
-          />
-
+          <div className="input-container">
+            <input
+              className="input-crossword"
+              type="text"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)} // Update input value
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  fetchGivenCrossword(); // Fetch crossword on Enter key press
+                }
+              }}
+              placeholder={`${filePaths.indexOf(currentFile) + 1}`}
+            />
+            {isCorrect && <h1 className="status-message correct">Correct!</h1>}
+            {isIncorrect && (
+              <h1 className="status-message incorrect">Incorrect!</h1>
+            )}
+          </div>
           {/* Buttons */}
           <div className="buttons-container">
             <button
@@ -185,11 +191,6 @@ function CrossWordBoxCSV() {
                 setIsIncorrect(false); // Reset incorrect state on cell change
               }}
             ></Crossword>
-            {/* Status messages */}
-            {isCorrect && <h1 className="status-message correct">Correct!</h1>}
-            {isIncorrect && (
-              <h1 className="status-message incorrect">Incorrect!</h1>
-            )}
           </ThemeProvider>
         </div>
       </div>
