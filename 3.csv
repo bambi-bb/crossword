@@ -1,0 +1,8 @@
+number;answer;clue;direction;Row;col
+1;HALT;Stopp i lagens namn!;across;0;0
+2;ÖKEN;Små gruskorn i överflöd;across;1;0
+3;RUTA;Finns minst en i varje korsord;across;2;0
+1;HÖRA;Kan man göra med ett av sinnena;down;0;0
+5;AKUT;När det brådskar;down;0;1
+6;LETA;Att söka efter något;down;0;2
+

@@ -1,0 +1,9 @@
+number;answer;clue;direction;Row;col
+1;OKEJ;Godkänt på slang;across;0;0
+2;LAVA;Tränger fram ur naturliga sprickor;across;1;0
+3;IN;Dit vill man när det regnar;across;2;0
+4;VANA;Bra eller dålig rutin;across;3;0
+5;OLIV;Färgnyans och frukt;down;0;0
+6;KANA;Glida i backen;down;0;1
+7;JAMA;Bara katter kan;down;0;2
+

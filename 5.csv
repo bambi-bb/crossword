@@ -1,0 +1,7 @@
+number;answer;clue;direction;Row;col
+1;AREA;Yta;across;0;0
+2;NOGA;Utan slarv;across;1;0
+3;DAG;Tid styrd av solen;across;2;0
+1;ANDE;Spöke utan lakan;down;0;0
+4;ROAD;Du känner dig nöjd eller underhållen;down;0;1
+5;EGG;Vass kant;down;0;2

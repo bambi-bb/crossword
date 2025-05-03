@@ -1,15 +1,10 @@
 number;answer;clue;direction;Row;col
-1;BAKEER;s;across;0;0
-2;RACEEE;competition of speed;across;1;0
-3;RACEEE;competition of speed;across;2;0
-4;RACEEE;competition of speed;across;3;0
-5;RACEEE;competition of speed;across;4;0
-6;RACEEE;competition of speed;across;5;0
-7;RACEEE;competition of speed;across;6;0
-8;RACEEE;competition of speed;down;0;0
-9;RACEEE;competition of speed;down;0;1
-10;RACEEE;competition of speed;down;0;2
-11;RACEEE;competition of speed;down;0;3
-12;RACEEE;competition of speed;down;0;4
-13;RACEEE;competition of speed;down;0;5
-14;RACEEE;competition of speed;down;0;6
+1;EGEN;Bara min, inte din;across;0;0
+2;VARA;En sak som säljs;across;1;0
+3;IT;Tekniskt och digitalt ämne;across;2;0
+4;GALT;Manlig lortpelle;across;3;0
+1;EVIG;Är stark kärlek;down;0;0
+5;GATA;Asfalterad adress;down;0;1
+6;ER;Inte min - men nästan din;down;0;2
+7;NATT;Dagens mörka tvillingsjäl;down;0;3
+
