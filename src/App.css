@@ -1,17 +1,38 @@
 
 
 .crossword-title {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: flex-start;
     color: rgb(0, 0, 0);
     padding: 0px;
-    margin-top: 40px;
-    position: fixed;
+    margin-top: 20px;
+    margin-bottom: 20px;
     top:0;
     left: 0;
     right: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 70px;
+    font-family: 'Playfair Display', Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 90px;
   }
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+  .crossword-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    top:0;
+    left: 0;
+    right: 0;
+    font-family: 'Playfair Display', Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+  }
+}

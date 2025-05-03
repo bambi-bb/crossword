@@ -1,98 +1,97 @@
+
 body {
-    background-color: #ffffff; /* Light gray background */
+    background-color: #ffffff;
 }
 
 /* Main container */
 .crossword-wrapper {
-    display:  grid;
+    display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 900px 1fr; /* Two columns: one for the crossword and one for the buttons */
+    grid-template-columns: 1fr 900px 1fr;
     justify-content: center;
     align-items: start;
     padding: none;
-  }
-  
-  /* Crossword container */
+}
 
+/* Crossword container */
 .crossword-container {
     grid-area: 1/2/2/3;
     display: grid;
-    grid-template-rows: 80px 20px 600px; /* Two rows: one for buttons and one for the crossword */
+    grid-template-rows: 80px 20px 600px;
     justify-content: center;
     align-items: start;
-    margin-top: 80px;
-    background-color: #ffffff00; /* Light gray background */
-    padding: px; /* Add padding around the crossword container */
-    border-radius: 30px; /* Rounded corners */
-  }
-  
-  /* Input and buttons container */
-  .crossword-input-buttons-container {
+    margin-top: 0px;
+    background-color: #ffffff00;
+    padding: 0px;
+    border-radius: 30px;
+}
+
+/* Input and buttons container */
+.crossword-input-buttons-container {
     grid-area: 1/2/2/3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px; /* Add spacing below the group */;
-  }
-  
-  /* Input box */
-  .input-crossword {
+    margin-bottom: 0px;
+}
+
+/* Input box */
+.input-crossword {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 5px 10px;
     font-size: 16px;
-    margin-bottom: 10px; /* Add spacing below the input box */
-    width: 40px; /* Set a fixed width for the input box */
+    margin-bottom: 10px;
+    width: 40px;
     height: 30px;
     border-radius: 10px;
     border-color: #000000;
     background-color: #ffffff;
-  }
+}
 
-  .input-crossword::placeholder {
-    text-align: center; /* Center the placeholder text */
-    color: black; /* Make the placeholder text black */
-    opacity: 0.5; /* Remove the faded effect */
-  }
-  
-  /* Buttons container */
-  .buttons-container {
+.input-crossword::placeholder {
+    text-align: center;
+    color: black;
+    opacity: 0.5;
+}
+
+/* Buttons container */
+.buttons-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Add spacing between buttons */
-  }
-  
-  /* Button styles */
-  .crossword-button {
-    padding: 10px ;
+    gap: 10px;
+}
+
+/* Button styles */
+.crossword-button {
+    padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    width: 100px; /* Set a fixed width for buttons */
-    border: 2px solid #000000; /* Green border */
+    width: 100px;
+    border: 2px solid #000000;
     background-color: #ffffff;
     color: #000000;
     border-radius: 10px;
-  }
-  
-  /* Crossword grid container */
-  .crossword-grid-container {
+}
+
+/* Crossword grid container */
+.crossword-grid-container {
     grid-area: 3/2/4/3;
     display: grid;
     grid-template-rows: 500px;
-    grid-template-columns:  600px 200px;
-    margin-top: 00px;
+    grid-template-columns: 600px 200px;
+    margin-top: 20px;
     padding-left: 60px;
-  }
+}
 
-
-  /* Status messages */
-  .status-message {
+/* Status messages */
+.status-message {
     margin-top: 0px;
-  }
-  
-  .status-message.correct {
+}
+
+.status-message.correct {
     grid-area: 2/2/3/3;
     color: green;
     margin-left: 20px;
@@ -100,9 +99,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 60px;
-  }
-  
-  .status-message.incorrect {
+}
+
+.status-message.incorrect {
     grid-area: 2/2/3/3;
     margin-left: 20px;
     margin-top: 40px;
@@ -110,4 +109,59 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 60px;
-  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .crossword-wrapper {
+        grid-template-columns: 1fr;
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .crossword-container {
+        grid-template-rows: auto auto auto;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .crossword-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .crossword-input-buttons-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    .buttons-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .crossword-button {
+        width: 22vw;
+        font-size: 14px;
+    }
+
+    .input-crossword {
+        width: 5vw;
+        font-size: 14px;
+    }
+
+    .status-message.correct,
+    .status-message.incorrect {
+        font-size: 32px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
