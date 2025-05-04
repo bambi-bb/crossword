@@ -116,7 +116,7 @@
     font-weight: 100;
     font-size: 15px;
     width: 450px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     text-align: center;
   }
 
@@ -135,7 +135,7 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .crossword-title {
     display: flex;
     justify-content: center;
@@ -161,14 +161,14 @@
     font-family: 'Times New Roman', Times, serif, Georgia, Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 14px;
-    width: 340px;
+    width: 90vw;
   }
 
   .paragraph-second-title {
     margin: 0 auto;
     color: rgb(0, 0, 0);
     font-family: Georgia, Arial, Helvetica, sans-serif;
-    width: 340px;
+    width: 90vw;
     text-align: center;
 
   }
@@ -182,8 +182,8 @@
     font-family: Georgia, Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 14px;
-    width: 340px;
-    margin-bottom: 0px;
+    width: 90vw;
+    margin-bottom: 10px;
     text-align: center;
   }
 
