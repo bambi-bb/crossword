@@ -17,7 +17,7 @@ body {
 .crossword-container {
     grid-area: 1/2/2/3;
     display: grid;
-    grid-template-rows: 80px 20px 600px;
+    grid-template-rows: 55px 10px 450px;
     justify-content: center;
     align-items: start;
     margin-top: 0px;
@@ -30,10 +30,12 @@ body {
 .crossword-input-buttons-container {
     grid-area: 1/2/2/3;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     align-items: center;
     margin-bottom: 0px;
+    height: 55px;
+    padding-left: 150px;
 }
 
 .input-container {
@@ -50,7 +52,7 @@ body {
     padding: 4px;
     font-size: 16px;
     margin-bottom: 0px;
-    margin-right: 0px;
+    margin-right: 10px;
     width: 40px;
     height: 30px;
     border-radius: 10px;
@@ -69,7 +71,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 /* Button styles */
@@ -89,9 +91,9 @@ body {
     grid-area: 3/2/4/3;
     display: grid;
     grid-template-rows: 500px;
-    grid-template-columns: 600px 200px;
-    margin-top: 20px;
-    padding-left: 60px;
+    grid-template-columns: 450px 200px;
+    margin-top: 0px;
+    padding-left: 110px;
 }
 
 /* Status messages */
@@ -106,8 +108,8 @@ body {
     margin-left: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif, Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 300;
     font-size: 50px;
 }
 
@@ -117,8 +119,8 @@ body {
     margin-left: 10px;
     margin-bottom: 0px;
     color: red;
-    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif, Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 300;
     font-size: 50px;
 }
 
@@ -141,22 +143,24 @@ body {
         grid-template-rows: auto;
         padding-left: 0;
         margin-top: 20px;
-        width: 100%;
+        width: 450px;
         justify-content: center;
     }
 
     .crossword-input-buttons-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-bottom: 0px;
         margin-top: 20px;
+        padding-left: 0px;
     }
 
     .buttons-container {
         flex-direction: row;
         gap: 10px;
+        width: 250px;
     }
 
     .crossword-button {
@@ -172,7 +176,8 @@ body {
     .status-message.correct,
     .status-message.incorrect {
         font-size: 32px;
-        margin-left: 0;
+        margin-left: 10px;
         text-align: center;
+        font-size: 25px;
     }
 }

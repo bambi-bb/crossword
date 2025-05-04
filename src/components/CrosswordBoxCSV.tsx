@@ -134,14 +134,8 @@ function CrossWordBoxCSV() {
                   fetchGivenCrossword(); // Fetch crossword on Enter key press
                 }
               }}
-              placeholder={`${filePaths.indexOf(currentFile) + 1}`}
+              placeholder={`#${filePaths.indexOf(currentFile) + 1}`}
             />
-            {isCorrect && (
-              <h1 className="status-message correct">Rätt ifyllt!</h1>
-            )}
-            {isIncorrect && (
-              <h1 className="status-message incorrect">Fel ifyllt!</h1>
-            )}
           </div>
           {/* Buttons */}
           <div className="buttons-container">
@@ -158,6 +152,12 @@ function CrossWordBoxCSV() {
               Nästa
             </button>
           </div>
+          {isCorrect && (
+            <h1 className="status-message correct">Rätt ifyllt!</h1>
+          )}
+          {isIncorrect && (
+            <h1 className="status-message incorrect">Fel ifyllt!</h1>
+          )}
         </div>
 
         {/* Crossword grid */}

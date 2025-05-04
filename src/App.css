@@ -2,20 +2,69 @@
 
 .crossword-title {
     position: relative;
-
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     color: rgb(0, 0, 0);
     padding: 0px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     top:0;
     left: 0;
     right: 0;
-    font-family: 'Playfair Display', Georgia, Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 90px;
+    font-family: 'Times New Roman', Times, serif, Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 100px;
+  }
+
+  .paragraph-first {
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    width: 635px;
+    margin-bottom: 9px;
+    text-align: center;
+  }
+
+  .paragraph-second-title {
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    width: 635px;
+    text-align: center;
+
+  }
+
+  .paragraph-second {
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    width: 635px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .site-footer {
+    margin-top: 10px;
+    margin-bottom: 0px;;
+    padding: 4px;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 14px;
+    color: #3d3d3d;
+    opacity: 0.8;
+
   }
 
   /* Responsive styles */
@@ -31,8 +80,57 @@
     top:0;
     left: 0;
     right: 0;
-    font-family: 'Playfair Display', Georgia, Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif, Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 70px;
   }
+
+  .paragraph-first {
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif, Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    width: 450px;
+  }
+
+  .paragraph-second-title {
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    width: 450px;
+    text-align: center;
+
+  }
+
+  .paragraph-second {
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    width: 450px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .site-footer {
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+    opacity: 0.8;
+    width: 400px;
+
+  }
+
 }

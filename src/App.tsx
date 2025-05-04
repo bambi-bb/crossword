@@ -8,15 +8,36 @@ function App() {
   return (
     <>
       <h1 className="crossword-title">KorsandeOrd.se</h1>
+      <p className="paragraph-first">
+        Välkommen till <strong>KorsandeOrd.se</strong>! Tycker du om{" "}
+        <strong>ordlekar</strong>, <strong>webbkryss</strong> och kluriga ord på
+        svenska? Då har du kommit helt rätt. Här får du{" "}
+        <strong>daglig hjärngympa</strong> genom att{" "}
+        <strong>lösa korsord online</strong> helt gratis och snabbt utan att
+        behöva skapa konto.
+      </p>
+      <h2 className="paragraph-second-title">Så fungerar det</h2>
+      <p className="paragraph-second">
+        Klicka på ett korsord, fyll i dina svar direkt på skärmen och se om du
+        klarar utmaningen. Du kan slumpa fram nya korsord, hoppa mellan nivåer
+        och spela direkt i din webbläsare utan inloggning. Vill du veta mer om
+        KorsandeOrd.se klicka <a href="/om">här</a>.
+      </p>
       <div
         style={{
           display: "flex",
           justifyContent: "center",
-          width: "100vw",
+          width: "95vw",
         }}
       >
         <CrosswordBoxCSV></CrosswordBoxCSV>
       </div>
+      <footer className="site-footer">
+        <p>
+          KorsandeOrd.se - En korsordsapp för dig som gillar webbkryss, ordlekar
+          och hjärngympa online.
+        </p>
+      </footer>
     </>
   );
 }
