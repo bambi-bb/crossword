@@ -30,6 +30,7 @@
     "@jaredreisinger/react-crossword": "^5.2.0",
     "papaparse": "^5.5.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.5.3"
   }
 }
