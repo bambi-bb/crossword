@@ -136,9 +136,11 @@ function CrossWordBoxCSV() {
               }}
               placeholder={`${filePaths.indexOf(currentFile) + 1}`}
             />
-            {isCorrect && <h1 className="status-message correct">Correct!</h1>}
+            {isCorrect && (
+              <h1 className="status-message correct">Rätt ifyllt!</h1>
+            )}
             {isIncorrect && (
-              <h1 className="status-message incorrect">Incorrect!</h1>
+              <h1 className="status-message incorrect">Fel ifyllt!</h1>
             )}
           </div>
           {/* Buttons */}
